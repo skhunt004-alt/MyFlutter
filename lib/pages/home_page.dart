@@ -4,18 +4,18 @@ class HomePage extends StatelessWidget {
   final int days = 15;
   final String name = "Sahil Khunt";
 
+  const HomePage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalog App"),
+        title: const Text("Catalog App"),
       ),
       body: Center(
-        child: Container(
-          child: Text("Welcome $name to your flutter Home for $days"),
-        ),
+        child: Text("Welcome $name to your flutter Home for $days"),
       ),
-      drawer: Drawer(backgroundColor: Colors.yellow),
+      drawer: const Drawer(backgroundColor: Colors.yellow),
     );
   }
 }
